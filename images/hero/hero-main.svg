@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+    <defs>
+        <radialGradient id="heroBg" cx="60%" cy="40%" r="70%">
+            <stop offset="0%" stop-color="#4A2633"/>
+            <stop offset="60%" stop-color="#28131A"/>
+            <stop offset="100%" stop-color="#14080C"/>
+        </radialGradient>
+        <linearGradient id="heroGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F9E8B8"/>
+            <stop offset="50%" stop-color="#D4AF37"/>
+            <stop offset="100%" stop-color="#8E6A1B"/>
+        </linearGradient>
+        <radialGradient id="heroPearl" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="60%" stop-color="#FADDE2"/>
+            <stop offset="100%" stop-color="#C998A0"/>
+        </radialGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#heroBg)"/>
+    
+    <!-- Floating Sparkles -->
+    <g opacity="0.6">
+        <circle cx="200" cy="180" r="3" fill="#FFE2B8"/>
+        <circle cx="850" cy="140" r="4" fill="#FFE2B8"/>
+        <circle cx="1020" cy="420" r="2.5" fill="#FFE2B8"/>
+        <circle cx="150" cy="650" r="3" fill="#FFE2B8"/>
+        <circle cx="980" cy="680" r="4" fill="#FFE2B8"/>
+    </g>
+    
+    <!-- Elegant Center Composition -->
+    <g transform="translate(600, 380)">
+        <!-- Layered Floating Strands -->
+        <path d="M -300 -120 Q 0 240 300 -120" fill="none" stroke="url(#heroGold)" stroke-width="12" stroke-linecap="round" opacity="0.9"/>
+        <path d="M -240 -80 Q 0 320 240 -80" fill="none" stroke="url(#heroPearl)" stroke-width="16" stroke-linecap="round"/>
+        <path d="M -180 -40 Q 0 400 180 -40" fill="none" stroke="#E38B98" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+        
+        <!-- Center Gem Motif -->
+        <circle cx="0" cy="240" r="28" fill="url(#heroGold)"/>
+        <circle cx="0" cy="240" r="16" fill="#FFF8F0"/>
+        <circle cx="0" cy="320" r="22" fill="url(#heroPearl)"/>
+        <circle cx="0" cy="400" r="14" fill="url(#heroGold)"/>
+    </g>
+    
+    <!-- Luxury Brand Signature Text in Hero -->
+    <text x="600" y="680" text-anchor="middle" font-family="'Playfair Display', serif" font-size="34" font-style="italic" fill="#FAF5EF" letter-spacing="2">The Couture Handmade Bead Collection</text>
+    <text x="600" y="720" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="14" font-weight="500" fill="#D4AF37" letter-spacing="5">LAGOS · LONDON · WORLDWIDE</text>
+</svg>

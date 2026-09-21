@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 800" width="100%" height="100%">
+    <defs>
+        <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3C1E28"/>
+            <stop offset="100%" stop-color="#1A0A0F"/>
+        </linearGradient>
+        <linearGradient id="brandGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FCEAB8"/>
+            <stop offset="100%" stop-color="#B88A22"/>
+        </linearGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#brandGrad)"/>
+    <rect x="24" y="24" width="652" height="752" fill="none" stroke="url(#brandGold)" stroke-width="1.5" rx="8" opacity="0.6"/>
+    
+    <!-- Artisan Workshop Vector Art -->
+    <circle cx="350" cy="330" r="160" fill="#2E141D" stroke="url(#brandGold)" stroke-width="2"/>
+    <g transform="translate(350, 330)">
+        <!-- Hands crafting beads motif -->
+        <circle cx="0" cy="-60" r="14" fill="#FCEAB8"/>
+        <circle cx="45" cy="-40" r="12" fill="#E89CA8"/>
+        <circle cx="65" cy="5" r="15" fill="#FFFFFF"/>
+        <circle cx="45" cy="50" r="12" fill="#FCEAB8"/>
+        <circle cx="0" cy="70" r="16" fill="#E89CA8"/>
+        <circle cx="-45" cy="50" r="12" fill="#FFFFFF"/>
+        <circle cx="-65" cy="5" r="15" fill="#FCEAB8"/>
+        <circle cx="-45" cy="-40" r="12" fill="#E89CA8"/>
+        
+        <!-- Needle and silk thread -->
+        <line x1="-90" y1="-90" x2="90" y2="90" stroke="#FCEAB8" stroke-width="3"/>
+        <circle cx="0" cy="0" r="28" fill="#B88A22"/>
+        <text x="0" y="8" text-anchor="middle" font-family="'Playfair Display', serif" font-size="20" font-weight="700" fill="#FFF">✦</text>
+    </g>
+    
+    <text x="350" y="580" text-anchor="middle" font-family="'Playfair Display', serif" font-size="30" font-weight="600" fill="#FFF7ED">Artisan Craftsmanship</text>
+    <text x="350" y="620" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="13" fill="#D4AF37" letter-spacing="3">EVERY BEAD STRUNG WITH INTENTION</text>
+    <text x="350" y="660" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="14" fill="#E8C5C8" opacity="0.8">Lagos, Nigeria</text>
+</svg>

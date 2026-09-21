@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+    <defs>
+        <radialGradient id="bgGrad" cx="50%" cy="45%" r="75%">
+            <stop offset="0%" stop-color="#3F1F27"/>
+            <stop offset="65%" stop-color="#220F15"/>
+            <stop offset="100%" stop-color="#2D1E24"/>
+        </radialGradient>
+        <radialGradient id="pearlGrad" cx="35%" cy="35%" r="65%">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="40%" stop-color="#FFF0F2"/>
+            <stop offset="85%" stop-color="#E5C7CC"/>
+            <stop offset="100%" stop-color="#C29BA2"/>
+        </radialGradient>
+        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F7E6B5"/>
+            <stop offset="40%" stop-color="#D4AF37"/>
+            <stop offset="75%" stop-color="#AA8222"/>
+            <stop offset="100%" stop-color="#73530F"/>
+        </linearGradient>
+        <radialGradient id="gemGrad" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#FFD6DE"/>
+            <stop offset="45%" stop-color="#E38B98"/>
+            <stop offset="80%" stop-color="#A84C5B"/>
+            <stop offset="100%" stop-color="#5E1D27"/>
+        </radialGradient>
+        <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="8" result="glow"/>
+            <feComposite in="SourceGraphic" in2="glow" operator="over"/>
+        </filter>
+        <pattern id="dotGrid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+            <circle cx="15" cy="15" r="1.2" fill="#E2C889" opacity="0.15"/>
+        </pattern>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+    <rect width="100%" height="100%" fill="url(#dotGrid)"/>
+    
+    <!-- Decorative Luxury Frames -->
+    <rect x="30" y="30" width="740" height="740" fill="none" stroke="#E2C889" stroke-width="1.2" opacity="0.4" rx="12"/>
+    <rect x="42" y="42" width="716" height="716" fill="none" stroke="#E2C889" stroke-width="0.6" opacity="0.25" rx="8"/>
+    
+    <!-- Corner Flourishes -->
+    <circle cx="30" cy="30" r="4" fill="#E2C889"/>
+    <circle cx="770" cy="30" r="4" fill="#E2C889"/>
+    <circle cx="30" cy="770" r="4" fill="#E2C889"/>
+    <circle cx="770" cy="770" r="4" fill="#E2C889"/>
+    
+    <!-- Bead Art Component -->
+    
+        <!-- Waist bead curves -->
+        <path d="M 150 250 Q 400 450 650 250" fill="none" stroke="url(#goldGrad)" stroke-width="12" stroke-linecap="round" opacity="0.85"/>
+        <path d="M 170 310 Q 400 530 630 310" fill="none" stroke="url(#gemGrad)" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+        <path d="M 200 370 Q 400 590 600 370" fill="none" stroke="url(#pearlGrad)" stroke-width="8" stroke-linecap="round"/>
+        
+        <!-- Hanging Gold Beads Accent -->
+        <circle cx="400" cy="450" r="12" fill="url(#goldGrad)"/>
+        <circle cx="400" cy="530" r="10" fill="url(#goldGrad)"/>
+        <circle cx="400" cy="590" r="8" fill="url(#goldGrad)"/>
+        
+    
+    <!-- Elegant Overlay Banner for Title -->
+    <g transform="translate(0, 640)">
+        <rect x="80" y="10" width="640" height="100" rx="8" fill="#24171D" fill-opacity="0.88" stroke="#E2C889" stroke-width="1"/>
+        <text x="400" y="52" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="600" fill="#FFF7ED" letter-spacing="1.5">Gold Aura Waist Beads (Alt)</text>
+        <text x="400" y="86" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="14" font-weight="400" fill="#E2C889" letter-spacing="3">WORN VIEW & GLOW</text>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 60" width="320" height="60">
+    <defs>
+        <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F8E5B3"/>
+            <stop offset="50%" stop-color="#D4AF37"/>
+            <stop offset="100%" stop-color="#9C7720"/>
+        </linearGradient>
+    </defs>
+    <!-- Monogram crown / bead icon -->
+    <g transform="translate(6, 12)">
+        <circle cx="16" cy="18" r="14" fill="none" stroke="url(#logoGold)" stroke-width="1.8"/>
+        <circle cx="16" cy="18" r="8" fill="#E8AAB2" opacity="0.7"/>
+        <circle cx="16" cy="6" r="3.5" fill="url(#logoGold)"/>
+        <circle cx="6" cy="22" r="2.5" fill="url(#logoGold)"/>
+        <circle cx="26" cy="22" r="2.5" fill="url(#logoGold)"/>
+    </g>
+    <!-- Brand Name typography -->
+    <text x="46" y="32" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="700" fill="#2D1E24" letter-spacing="0.8">ElleBeeLuxeBeads</text>
+    <text x="48" y="46" font-family="'Montserrat', sans-serif" font-size="7.5" font-weight="600" fill="#B88A22" letter-spacing="3.2">HANDMADE ACCESSOIRES</text>
+</svg>

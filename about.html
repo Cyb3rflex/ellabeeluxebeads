@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | ElleBeeLuxeBeads</title>
+  <meta name="description" content="Discover the story behind ElleBeeLuxeBeads. Premium handcrafted beads made with intention, elegance and pride in Lagos, Nigeria." />
+  
+  <meta property="og:title" content="About ElleBeeLuxeBeads" />
+  <meta property="og:description" content="Handcrafted bead designs made to add a little more beauty to every look." />
+  <meta property="og:image" content="images/brand/artisan-story.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="images/logo/logo.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <span>✦</span> Handcrafted with love in Lagos · Free custom sizing on all WhatsApp orders <span>✦</span>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="ElleBeeLuxeBeads Home">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="16" r="14" stroke="#C59A4E" stroke-width="1.8"/>
+          <circle cx="16" cy="16" r="7" fill="#D48C95"/>
+          <circle cx="16" cy="6" r="3" fill="#C59A4E"/>
+        </svg>
+        <div class="brand-logo-text">
+          ElleBeeLuxeBeads
+          <span class="brand-logo-tagline">Handmade Accessories</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="index.html#categories" class="nav-link">Collections</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-icon open-cart-btn" aria-label="Open Shopping Bag" title="Shopping Bag">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-counter" style="display:none">0</span>
+        </button>
+
+        <button class="nav-whatsapp-btn" onclick="openGeneralWhatsApp()" title="Chat with owner on WhatsApp">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span>WhatsApp Us</span>
+        </button>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="shop.html" class="mobile-nav-link">Shop Collection <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link active">About ElleBee <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact & Custom <span>→</span></a>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:1rem; margin-top:2rem;">
+      <button class="btn btn-whatsapp-solid btn-full" onclick="openGeneralWhatsApp()">Chat on WhatsApp</button>
+      <button class="btn btn-secondary btn-full open-cart-btn">View Shopping Bag</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">Our Story & Heritage</span>
+        <h1 class="section-title">The Story Behind <em>ElleBee</em></h1>
+        <div class="gold-divider"></div>
+        <p class="section-subtitle">Created for women who cherish the quiet confidence of intentional handcrafted adornments.</p>
+      </div>
+    </section>
+
+    <!-- BRAND STORY DETAILED -->
+    <section class="about-snippet-section" style="background:var(--bg-cream-soft); padding: 5rem 0 6rem;">
+      <div class="container about-grid">
+        <div class="about-image-card">
+          <img src="images/brand/artisan-story.svg" alt="Artisan handcrafting ElleBee beads" />
+        </div>
+        <div class="about-story-text">
+          <span class="section-label">Philosophy & Craft</span>
+          <h2 class="section-title">Beads as <em>Adornment,</em> Beads as <em>Identity</em></h2>
+          <div class="gold-divider left"></div>
+          <p>
+            <strong>ElleBeeLuxeBeads</strong> was born from a deep love of color, culture, and feminine elegance. What began as a personal passion for creating dainty jewelry pieces has grown into a cherished boutique brand dedicated to high-vibrational beauty.
+          </p>
+          <p>
+            Every strand is hand-selected and carefully strung with intention in Lagos, Nigeria. Whether it is our signature <strong>waist beads</strong> that accentuate your natural silhouette or our layered <strong>bridal pearl chokers</strong>, we take immense pride in crafting pieces that make you feel radiant and empowered.
+          </p>
+          <p>
+            We celebrate the beauty of custom jewelry — where your preferred colors, measurements, and stones come together seamlessly through direct, friendly conversations on WhatsApp.
+          </p>
+          <div class="about-signature" style="margin-top:2rem;">
+            <a href="shop.html" class="btn btn-primary">Browse Catalogue</a>
+            <button class="btn btn-whatsapp-solid" onclick="requestCustomDesign()">Request Custom Piece</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAND VALUES -->
+    <section class="values-section">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Core Pillars</span>
+          <h2 class="section-title">What Defines <em>ElleBeeLuxeBeads</em></h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon-box">✦</div>
+            <h3 class="value-title">Handcrafted</h3>
+            <p class="value-desc">Every piece is hand-strung by skilled artisans with meticulous attention to knotting and durability.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon-box">💎</div>
+            <h3 class="value-title">Unique</h3>
+            <p class="value-desc">No mass production. We craft limited batches and one-of-a-kind bespoke pieces.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon-box">💕</div>
+            <h3 class="value-title">Made With Love</h3>
+            <p class="value-desc">From our silk thread selection to our luxury packaging, love and care touch every detail.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon-box">🎨</div>
+            <h3 class="value-title">Customizable</h3>
+            <p class="value-desc">Personalize colors, charms, initials, and exact circumference via WhatsApp consultation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE CRAFTSMANSHIP PROCESS -->
+    <section style="padding: 6rem 0; background: var(--bg-cream);">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Behind The Scenes</span>
+          <h2 class="section-title">Our Artisan <em>Process</em></h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle">How every single ElleBee piece comes to life from our Lagos workshop.</p>
+        </div>
+
+        <div class="about-craft-steps">
+          <div class="craft-step-card">
+            <div class="step-num">01</div>
+            <h3 class="font-serif" style="font-size:1.15rem; margin-bottom:0.5rem; color:var(--text-title);">Curating Materials</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
+              We source premium Czech crystals, freshwater-look pearls, glass seed beads, and tarnish-resistant gold accents.
+            </p>
+          </div>
+
+          <div class="craft-step-card">
+            <div class="step-num">02</div>
+            <h3 class="font-serif" style="font-size:1.15rem; margin-bottom:0.5rem; color:var(--text-title);">Custom Sizing</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
+              We tailor lengths based on your exact measurements or prepare adjustable tie-on strands.
+            </p>
+          </div>
+
+          <div class="craft-step-card">
+            <div class="step-num">03</div>
+            <h3 class="font-serif" style="font-size:1.15rem; margin-bottom:0.5rem; color:var(--text-title);">Artisan Beading</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
+              Each bead is strung by hand using reinforced cord, tested for strength, balance, and graceful drape.
+            </p>
+          </div>
+
+          <div class="craft-step-card">
+            <div class="step-num">04</div>
+            <h3 class="font-serif" style="font-size:1.15rem; margin-bottom:0.5rem; color:var(--text-title);">Luxe Packaging</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
+              Safely packed in signature velvet pouches and ready to gift or wear immediately upon delivery.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALLOUT SECTION -->
+    <section class="custom-cta-section">
+      <div class="container custom-cta-box">
+        <span class="section-label">Ready For Your Piece?</span>
+        <h2>Let's Create Together</h2>
+        <p>Chat directly with our designer to select beads, confirm sizes, or place an order.</p>
+        <button class="btn btn-whatsapp-solid btn-lg" onclick="openGeneralWhatsApp()">
+          Chat on WhatsApp With The Founder
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Bag">
+    <div class="cart-header">
+      <h3 class="cart-title"><span>🛍️</span> Your Shopping Bag</h3>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close Bag">✕</button>
+    </div>
+    <div class="cart-body" id="cartDrawerBody"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span class="cart-subtotal-label">Estimated Total:</span>
+        <span class="cart-subtotal-amount" id="cartDrawerSubtotal">₦0</span>
+      </div>
+      <p class="cart-note-micro">✦ Sizing consultation & delivery calculated via WhatsApp ✦</p>
+      <button class="btn btn-whatsapp-solid btn-full" id="cartCheckoutBtn">
+        Order on WhatsApp 💕
+      </button>
+    </div>
+  </aside>
+
+  <!-- ORDER REVIEW MODAL -->
+  <div class="modal-backdrop" id="orderReviewModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="font-serif" style="font-size:1.3rem;">Your Selection & Sizing</h3>
+        <button class="cart-close-btn" id="orderModalCloseBtn">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="order-items-preview">
+          <div class="order-preview-list" id="orderModalList"></div>
+          <div class="order-preview-row" style="font-weight:700; font-size:1rem; color:var(--text-title); padding-top:0.4rem;">
+            <span>Estimated Total:</span>
+            <span id="orderModalTotal">₦0</span>
+          </div>
+        </div>
+
+        <form id="orderReviewForm">
+          <div class="form-group">
+            <label class="form-label" for="customerNameInput">Your Name</label>
+            <input type="text" id="customerNameInput" class="form-control" placeholder="e.g. Sarah" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="customerPhoneInput">Phone Number (Optional)</label>
+            <input type="tel" id="customerPhoneInput" class="form-control" placeholder="e.g. 0801 234 5678" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="customerNoteInput">Special Request / Sizing Note</label>
+            <textarea id="customerNoteInput" class="form-control" placeholder="e.g. I need the bracelet in a slightly smaller size, or specific colors..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp-solid btn-full btn-lg" style="margin-top:0.5rem;">
+            Continue to WhatsApp 💕
+          </button>
+          <p style="font-size:0.75rem; color:var(--text-muted); text-align:center; margin-top:0.8rem;">
+            You will be redirected to WhatsApp to finalize payment, custom sizing and delivery directly with the owner.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="javascript:void(0)" class="floating-whatsapp" onclick="openGeneralWhatsApp()" aria-label="Chat with ElleBeeLuxeBeads on WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span>Chat with us 💕</span>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>ElleBeeLuxeBeads</h3>
+          <p>Handcrafted luxury bead designs made to add a little more beauty to every look. Proudly crafted in Lagos, Nigeria.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <div class="footer-links">
+            <a href="shop.html?category=Bracelets">Bracelets</a>
+            <a href="shop.html?category=Waist Beads">Waist Beads</a>
+            <a href="shop.html?category=Anklets">Anklets</a>
+            <a href="shop.html?category=Necklaces">Necklaces</a>
+            <a href="shop.html?category=Gift Sets">Gift Sets</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <div class="footer-links">
+            <a href="about.html">About The Brand</a>
+            <a href="contact.html">Contact & Studio</a>
+            <a href="contact.html#faq">Frequently Asked Questions</a>
+            <a href="javascript:void(0)" onclick="requestCustomDesign()">Custom Order Inquiry</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Studio Direct</h4>
+          <div class="footer-links">
+            <span style="color:rgba(255,253,249,0.7); font-size:0.85rem;">📍 Lagos, Nigeria</span>
+            <span style="color:rgba(255,253,249,0.7); font-size:0.85rem;">✉️ daniellaotene84@gmail.com</span>
+            <span style="color:rgba(255,253,249,0.7); font-size:0.85rem;">💬 WhatsApp Orders Only</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ElleBeeLuxeBeads · Beautifully beaded. Uniquely you.</span>
+        <span>All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

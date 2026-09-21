@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details | ElleBeeLuxeBeads</title>
+  <meta name="description" content="View details and order handcrafted bead designs from ElleBeeLuxeBeads directly via WhatsApp." />
+  
+  <meta property="og:title" content="Product Details | ElleBeeLuxeBeads" />
+  <meta property="og:description" content="Handcrafted luxury bead designs made in Lagos, Nigeria." />
+  <meta property="og:image" content="images/hero/hero-main.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="images/logo/logo.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <span>✦</span> Handcrafted with love in Lagos · Free custom sizing on all WhatsApp orders <span>✦</span>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="ElleBeeLuxeBeads Home">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="16" r="14" stroke="#C59A4E" stroke-width="1.8"/>
+          <circle cx="16" cy="16" r="7" fill="#D48C95"/>
+          <circle cx="16" cy="6" r="3" fill="#C59A4E"/>
+        </svg>
+        <div class="brand-logo-text">
+          ElleBeeLuxeBeads
+          <span class="brand-logo-tagline">Handmade Accessories</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link active">Shop</a>
+        <a href="index.html#categories" class="nav-link">Collections</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-icon open-cart-btn" aria-label="Open Shopping Bag" title="Shopping Bag">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-counter" style="display:none">0</span>
+        </button>
+
+        <button class="nav-whatsapp-btn" onclick="openGeneralWhatsApp()" title="Chat with owner on WhatsApp">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span>WhatsApp Us</span>
+        </button>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="shop.html" class="mobile-nav-link active">Shop Collection <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About ElleBee <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact & Custom <span>→</span></a>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:1rem; margin-top:2rem;">
+      <button class="btn btn-whatsapp-solid btn-full" onclick="openGeneralWhatsApp()">Chat on WhatsApp</button>
+      <button class="btn btn-secondary btn-full open-cart-btn">View Shopping Bag</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="product-detail-section">
+      <div class="container">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="shop.html">Shop</a>
+          <span>/</span>
+          <a href="#" id="breadcrumbCategory">Category</a>
+          <span>/</span>
+          <span style="color:var(--text-title); font-weight:600;" id="breadcrumbProduct">Product Name</span>
+        </nav>
+
+        <!-- Product Main Container (Rendered dynamically by script.js) -->
+        <div id="productDetailContainer">
+          <div style="text-align:center; padding: 4rem 0;">
+            <p>Loading luxury piece...</p>
+          </div>
+        </div>
+
+        <!-- Related Products Section -->
+        <div style="margin-top: 6rem; padding-top: 4rem; border-top: 1px solid var(--border-light);">
+          <div class="section-header-center">
+            <span class="section-label">Complete The Look</span>
+            <h2 class="section-title">You May Also <em>Love</em></h2>
+            <div class="gold-divider"></div>
+          </div>
+          <div class="products-grid" id="relatedProductsGrid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Bag">
+    <div class="cart-header">
+      <h3 class="cart-title"><span>🛍️</span> Your Shopping Bag</h3>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close Bag">✕</button>
+    </div>
+    <div class="cart-body" id="cartDrawerBody"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span class="cart-subtotal-label">Estimated Total:</span>
+        <span class="cart-subtotal-amount" id="cartDrawerSubtotal">₦0</span>
+      </div>
+      <p class="cart-note-micro">✦ Sizing consultation & delivery calculated via WhatsApp ✦</p>
+      <button class="btn btn-whatsapp-solid btn-full" id="cartCheckoutBtn">
+        Order on WhatsApp 💕
+      </button>
+    </div>
+  </aside>
+
+  <!-- ORDER REVIEW MODAL -->
+  <div class="modal-backdrop" id="orderReviewModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="font-serif" style="font-size:1.3rem;">Your Selection & Sizing</h3>
+        <button class="cart-close-btn" id="orderModalCloseBtn">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="order-items-preview">
+          <div class="order-preview-list" id="orderModalList"></div>
+          <div class="order-preview-row" style="font-weight:700; font-size:1rem; color:var(--text-title); padding-top:0.4rem;">
+            <span>Estimated Total:</span>
+            <span id="orderModalTotal">₦0</span>
+          </div>
+        </div>
+
+        <form id="orderReviewForm">
+          <div class="form-group">
+            <label class="form-label" for="customerNameInput">Your Name</label>
+            <input type="text" id="customerNameInput" class="form-control" placeholder="e.g. Sarah" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="customerPhoneInput">Phone Number (Optional)</label>
+            <input type="tel" id="customerPhoneInput" class="form-control" placeholder="e.g. 0801 234 5678" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="customerNoteInput">Special Request / Sizing Note</label>
+            <textarea id="customerNoteInput" class="form-control" placeholder="e.g. I need the bracelet in a slightly smaller size, or specific colors..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp-solid btn-full btn-lg" style="margin-top:0.5rem;">
+            Continue to WhatsApp 💕
+          </button>
+          <p style="font-size:0.75rem; color:var(--text-muted); text-align:center; margin-top:0.8rem;">
+            You will be redirected to WhatsApp to finalize payment, custom sizing and delivery directly with the owner.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="javascript:void(0)" class="floating-whatsapp" onclick="openGeneralWhatsApp()" aria-label="Chat with ElleBeeLuxeBeads on WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span>Chat with us 💕</span>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>ElleBeeLuxeBeads</h3>
+          <p>Handcrafted luxury bead designs made to add a little more beauty to every look. Proudly crafted in Lagos, Nigeria.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <div class="footer-links">
+            <a href="shop.html?category=Bracelets">Bracelets</a>
+            <a href="shop.html?category=Waist Beads">Waist Beads</a>
+            <a href="shop.html?category=Anklets">Anklets</a>
+            <a href="shop.html?category=Necklaces">Necklaces</a>
+            <a href="shop.html?category=Gift Sets">Gift Sets</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <div class="footer-links">
+            <a href="about.html">About The Brand</a>
+            <a href="contact.html">Contact & Studio</a>
+            <a href="contact.html#faq">Frequently Asked Questions</a>
+            <a href="javascript:void(0)" onclick="requestCustomDesign()">Custom Order Inquiry</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Studio Direct</h4>
+          <div class="footer-links">
+            <span style="color:rgba(255,253,249,0.7); font-size:0.85rem;">📍 Lagos, Nigeria</span>
+            <span style="color:rgba(255,253,249,0.7); font-size:0.85rem;">✉️ daniellaotene84@gmail.com</span>
+            <span style="color:rgba(255,253,249,0.7); font-size:0.85rem;">💬 WhatsApp Orders Only</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ElleBeeLuxeBeads · Beautifully beaded. Uniquely you.</span>
+        <span>All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

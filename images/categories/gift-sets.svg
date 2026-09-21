@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+    <defs>
+        <radialGradient id="bgGrad" cx="50%" cy="45%" r="75%">
+            <stop offset="0%" stop-color="#3F1E29"/>
+            <stop offset="65%" stop-color="#200E14"/>
+            <stop offset="100%" stop-color="#2D1E24"/>
+        </radialGradient>
+        <radialGradient id="pearlGrad" cx="35%" cy="35%" r="65%">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="40%" stop-color="#FFF0F2"/>
+            <stop offset="85%" stop-color="#E5C7CC"/>
+            <stop offset="100%" stop-color="#C29BA2"/>
+        </radialGradient>
+        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F7E6B5"/>
+            <stop offset="40%" stop-color="#D4AF37"/>
+            <stop offset="75%" stop-color="#AA8222"/>
+            <stop offset="100%" stop-color="#73530F"/>
+        </linearGradient>
+        <radialGradient id="gemGrad" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#FFD6DE"/>
+            <stop offset="45%" stop-color="#E38B98"/>
+            <stop offset="80%" stop-color="#A84C5B"/>
+            <stop offset="100%" stop-color="#5E1D27"/>
+        </radialGradient>
+        <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="8" result="glow"/>
+            <feComposite in="SourceGraphic" in2="glow" operator="over"/>
+        </filter>
+        <pattern id="dotGrid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+            <circle cx="15" cy="15" r="1.2" fill="#D4AF37" opacity="0.15"/>
+        </pattern>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+    <rect width="100%" height="100%" fill="url(#dotGrid)"/>
+    
+    <!-- Decorative Luxury Frames -->
+    <rect x="30" y="30" width="740" height="740" fill="none" stroke="#D4AF37" stroke-width="1.2" opacity="0.4" rx="12"/>
+    <rect x="42" y="42" width="716" height="716" fill="none" stroke="#D4AF37" stroke-width="0.6" opacity="0.25" rx="8"/>
+    
+    <!-- Corner Flourishes -->
+    <circle cx="30" cy="30" r="4" fill="#D4AF37"/>
+    <circle cx="770" cy="30" r="4" fill="#D4AF37"/>
+    <circle cx="30" cy="770" r="4" fill="#D4AF37"/>
+    <circle cx="770" cy="770" r="4" fill="#D4AF37"/>
+    
+    <!-- Bead Art Component -->
+    
+        <!-- Gift Box & Beads Set -->
+        <rect x="250" y="270" width="300" height="260" rx="16" fill="url(#gemGrad)" stroke="#D4AF37" stroke-width="4"/>
+        <line x1="400" y1="270" x2="400" y2="530" stroke="url(#goldGrad)" stroke-width="16"/>
+        <line x1="250" y1="400" x2="550" y2="400" stroke="url(#goldGrad)" stroke-width="16"/>
+        
+        <!-- Ribbon Bow -->
+        <path d="M 400 270 C 340 210, 320 270, 400 270 Z" fill="url(#goldGrad)"/>
+        <path d="M 400 270 C 460 210, 480 270, 400 270 Z" fill="url(#goldGrad)"/>
+        <circle cx="400" cy="270" r="14" fill="#D4AF37"/>
+        
+        <!-- Beaded Strand cascading -->
+        <path d="M 230 460 Q 400 620 570 460" fill="none" stroke="url(#pearlGrad)" stroke-width="10" stroke-linecap="round"/>
+        
+    
+    <!-- Elegant Overlay Banner for Title -->
+    <g transform="translate(0, 640)">
+        <rect x="80" y="10" width="640" height="100" rx="8" fill="#24171D" fill-opacity="0.88" stroke="#D4AF37" stroke-width="1"/>
+        <text x="400" y="52" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="600" fill="#FFF7ED" letter-spacing="1.5">Gift Sets</text>
+        <text x="400" y="86" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="14" font-weight="400" fill="#E2C889" letter-spacing="3">LUXE GIFT BOXES & BUNDLES</text>
+    </g>
+</svg>
